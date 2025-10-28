@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>DeutschSteps — 语序练习</title>
+    <link rel="icon" href="../favicon.ico" />
+  <!-- Open Graph / Twitter cards -->
+  <meta property="og:title" content="DeutschSteps — 语序练习" />
+  <meta property="og:description" content="交互式德语语序练习：拖拽单词排列句子。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/og_image.jpeg" />
+  <meta property="og:image:alt" content="DeutschSteps hero" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="images/og_image.jpeg" />
+  <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">DeutschSteps</a>
+        <nav class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="game.html" class="active">Exercises</a>
+          <a href="#about">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="card large-card">
+        <h1>DeutschSteps — word order practice 语序练习</h1>
+        <div class="meta">
+          <div>练习：句子语序（句子构造、动词位置、从句）</div>
+          <div>已答: <span id="answered">0</span> / 总: <span id="total">0</span></div>
+          <div>难度: 初级 → 中级</div>
+        </div>
+
+        <div class="board-area">
+          <div id="sentence-board" class="sentence-board" aria-live="polite"></div>
+        </div>
+
+        <div class="controls">
+          <button class="pill" id="checkBtn">check 检查</button>
+          <button class="pill" id="nextBtn">next 下一题</button>
+          <button class="pill" id="answerBtn">answer 显示答案</button>
+          <button class="pill" id="resetBtn">reset 重置本题</button>
+          <div id="result" class="result" role="status" aria-live="polite"></div>
+        </div>
+
+        <p class="hint">把单词按正确的语序拖拽排列，然后点击“check”。支持触摸屏拖拽。</p>
+        <p class="example">示例句子聚焦于常见德语语序（陈述句、时间-地点-方式、从句中的动词置尾等）。</p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2025 DeutschSteps</p>
+      </div>
+    </footer>
+
+    <script src="game.js"></script>
+  </body>
+</html>
